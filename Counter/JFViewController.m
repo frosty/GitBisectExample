@@ -21,6 +21,7 @@
 
 - (IBAction)resetCounter:(id)sender
 {
+    self.counterLabel.text = @"0";
 }
 
 @end
