@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-Wz-qVb">
-                                <rect key="frame" x="120" y="283" width="81" height="34"/>
+                                <rect key="frame" x="99" y="288" width="124" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Increment">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,9 +28,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-hV-vad">
-                                <rect key="frame" x="155" y="162" width="10" height="21"/>
+                                <rect key="frame" x="20" y="60" width="280" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="140"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,8 +38,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="JBx-Wz-qVb" secondAttribute="centerX" constant="-0.5" id="9w4-Kq-Pbi"/>
-                            <constraint firstItem="JBx-Wz-qVb" firstAttribute="top" secondItem="fx4-hV-vad" secondAttribute="bottom" constant="100" id="Gc0-TC-lCg"/>
-                            <constraint firstItem="fx4-hV-vad" firstAttribute="top" secondItem="a7U-pL-8yl" secondAttribute="bottom" constant="142" id="Zab-qr-PXW"/>
+                            <constraint firstItem="JBx-Wz-qVb" firstAttribute="top" secondItem="fx4-hV-vad" secondAttribute="bottom" constant="60" id="Gc0-TC-lCg"/>
+                            <constraint firstItem="fx4-hV-vad" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="QYa-HE-UJf"/>
+                            <constraint firstItem="fx4-hV-vad" firstAttribute="top" secondItem="a7U-pL-8yl" secondAttribute="bottom" constant="40" id="Zab-qr-PXW"/>
+                            <constraint firstAttribute="trailing" secondItem="fx4-hV-vad" secondAttribute="trailing" constant="20" id="e0U-tv-bD1"/>
                             <constraint firstAttribute="centerX" secondItem="fx4-hV-vad" secondAttribute="centerX" id="sL8-0E-QiV"/>
                         </constraints>
                     </view>
