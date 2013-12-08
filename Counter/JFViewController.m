@@ -16,10 +16,8 @@
 @implementation JFViewController
 
 - (IBAction)incrementCounter:(id)sender
-{
-    NSInteger counterValue = [self.counterLabel.text integerValue] + 1;
-    
-    self.counterLabel.text = [@(counterValue) stringValue];
+{    
+    self.counterLabel.text = [@([self.counterLabel.text integerValue]) stringValue];
 }
 
 @end
