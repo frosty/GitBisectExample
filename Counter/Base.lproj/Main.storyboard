@@ -23,6 +23,9 @@
                                 <state key="normal" title="Increment">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="incrementCounter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZOi-tU-gBv"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-hV-vad">
                                 <rect key="frame" x="155" y="162" width="10" height="21"/>
@@ -40,6 +43,9 @@
                             <constraint firstAttribute="centerX" secondItem="fx4-hV-vad" secondAttribute="centerX" id="sL8-0E-QiV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="fx4-hV-vad" id="JIb-Zp-NYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

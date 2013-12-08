@@ -9,7 +9,8 @@
 #import "JFViewController.h"
 
 @interface JFViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *counterLabel;
+- (IBAction)incrementCounter:(id)sender;
 @end
 
 @implementation JFViewController
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)incrementCounter:(id)sender
+{
 }
 
 @end
