@@ -29,6 +29,10 @@
 
 - (IBAction)incrementCounter:(id)sender
 {
+    NSInteger counterValue = [self.counterLabel.text integerValue];
+    counterValue++;
+    
+    self.counterLabel.text = [@(counterValue) stringValue];
 }
 
 @end
