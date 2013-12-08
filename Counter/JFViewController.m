@@ -10,7 +10,6 @@
 
 @interface JFViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *counterLabel;
-- (IBAction)incrementCounter:(id)sender;
 @end
 
 @implementation JFViewController
@@ -18,6 +17,10 @@
 - (IBAction)incrementCounter:(id)sender
 {    
     self.counterLabel.text = [@([self.counterLabel.text integerValue]) stringValue];
+}
+
+- (IBAction)resetCounter:(id)sender
+{
 }
 
 @end

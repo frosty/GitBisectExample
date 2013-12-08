@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-Wz-qVb">
-                                <rect key="frame" x="99" y="288" width="124" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBx-Wz-qVb">
+                                <rect key="frame" x="119" y="288" width="83" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Count!">
@@ -25,6 +25,18 @@
                                 </state>
                                 <connections>
                                     <action selector="incrementCounter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZOi-tU-gBv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ml-Jc-4ae">
+                                <rect key="frame" x="137" y="342" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="incrementCounter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ye6-gh-9XB"/>
+                                    <action selector="resetCounter:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OrX-vS-L2r"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-hV-vad">
@@ -43,7 +55,9 @@
                             <constraint firstItem="fx4-hV-vad" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="QYa-HE-UJf"/>
                             <constraint firstItem="fx4-hV-vad" firstAttribute="top" secondItem="a7U-pL-8yl" secondAttribute="bottom" constant="40" id="Zab-qr-PXW"/>
                             <constraint firstAttribute="trailing" secondItem="fx4-hV-vad" secondAttribute="trailing" constant="20" id="e0U-tv-bD1"/>
+                            <constraint firstItem="JBx-Wz-qVb" firstAttribute="centerX" secondItem="7ml-Jc-4ae" secondAttribute="centerX" id="hGs-UR-Wm4"/>
                             <constraint firstAttribute="centerX" secondItem="fx4-hV-vad" secondAttribute="centerX" id="sL8-0E-QiV"/>
+                            <constraint firstItem="7ml-Jc-4ae" firstAttribute="top" secondItem="JBx-Wz-qVb" secondAttribute="bottom" constant="8" id="tn2-MC-DZM"/>
                         </constraints>
                     </view>
                     <connections>
